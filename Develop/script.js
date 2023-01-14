@@ -2,6 +2,18 @@
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+let lowerCase = "abcdefghijklmnopqrstuvwxyz";
+let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// Stored numbersin variable as a string; will convert to numbers later
+let num = "0123456789";
+let specChar =  " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+// stored all four criteria options in an array
+let allOptions = [lowerCase, upperCase, num, specChar];
+
+var pwLength = userInput();
+function userInput() {
+  if 
+}
 
 // Define the generatePassword() function
 function generatePassword (){

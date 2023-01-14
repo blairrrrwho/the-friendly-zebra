@@ -13,7 +13,7 @@ function generatePassword (){
     return "generated pw will go here";
     // this returns the value when you click the button; now you know the basics of the function
     // are working
-    // store generated password into a variable and return that variable at end of function
+    // store generated password into a variable and return that variable at end of
   }
 
 // rewrite
