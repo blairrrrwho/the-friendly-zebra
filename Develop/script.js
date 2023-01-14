@@ -1,10 +1,18 @@
 // Assignment code here
 
-// Declaring all variables that are needed / might be needed
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+// Define the generatePassword() function
+function generatePassword (){
+  // Use this for buttons to ensure things are working correctly
+  console.log("hey! you clicked the button.");
+  
+
+  // store generated password into a variable and return that variable at end of function
+  // step 4
+  return "generated pw will go here";
+}
 
 // Write password to the #password input
 function writePassword() {
