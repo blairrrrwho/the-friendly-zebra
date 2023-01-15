@@ -2,13 +2,26 @@
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-
-const arrayLowerCase = "abcdefghijklmnopqrstuvwxyz";
-const arrayUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const arrayLowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p",
+  "q","r","s","t","u","v","w","x","y","z"];
+  console.log(arrayLowerCase.length);
+const arrayUpperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P",
+  "Q","R","S","T","U","V","W","X","Y","Z",];
+  console.log(arrayUpperCase.length);
 // Stored numbers in variable as a string; will convert to numbers later
-const arrayNumeric = "0123456789";
-const arraySpecialChar =  " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-var pool = [];
+const arrayNumeric = [0,1,2,3,4,5,6,7,8,9];
+console.log(arrayNumeric.length);
+const arraySpecialChar = [" ", "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+",
+  ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`",
+  "{", "|", "}", "~"];
+  console.log(arraySpecialChar.length);
+
+
+// Made an initial alert before the page is loaded for fun lol
+function generatePasswordAlert (){
+  window.alert("Hi!\nI hear you need a password generated :o)");  
+  }
+generatePasswordAlert();
 
 
 // Define the generatePassword() function
@@ -16,62 +29,64 @@ function generatePassword (){
   // Use this for buttons to ensure things are working correctly
   console.log("hey! you clicked the button.");
 
-  window.alert("Hi!\nI hear you need a password generated :o)"); 
+  var pwResults = "";
+    var characterLength = window.prompt(
+      "First, choose a password character length between 8 and 128 characters.\
+      \n\nInput that value in the textbox and click OK."
+      );
+    var pwLength = parseInt(characterLength);
 
-  var userLength = window.prompt("First, choose a password character length between\
-  8 and 128 characters.\n\nInput that value in the textbox and click OK."
-  );
-    var pwLength = parseInt(userLength);
-
-      if (pwLength > 7 && pwLength < 129) {
-      /* {window.alert("Oops!\nYour chosen value is either too small, too big, or undefined.\
-        \n\nPlease enter a different value.")
-        // put something that redirects to the length prompt screen until a corrent value entered}*/
-
-        let lowerCase = window.prompt("Do you want to include lowercase character types in your password?\
-        \nType y for Yes, n for No");
-          // if (lowerCase = "Y".toLowerCase) {pool.push(...)} 
-          // console.log(pool);
+    if (pwLength > 7 && pwLength < 129) {
+      var lowerCase = window.confirm(
+        "Do you want to include lowercase letters in your password?\nType y for Yes, n for No"
+        );
         
-        let upperCase = window.prompt("Do you want to include uppercase character types in your password?\
-        \nType y for Yes, n for No");
-          // if (userCriteria2 = "Y".toLowerCase) {pool.push(...)}
-          // console.log(pool);
+      var upperCase = window.confirm(
+        "Do you want to include uppercase character types in your password?\nType y for Yes, n for No"
+        );
 
-        let numericVal = window.prompt("Do you want to include numbers in your password?\
-        \nType y for Yes, n for No");
-          // if (numericVal = "Y".toLowerCase) {pool.push(...)}
-          // console.log(pool);
+      var numericVal = window.confirm(
+        "Do you want to include numbers in your password?\nType y for Yes, n for No"
+        );
 
-        let specChar = window.prompt("Do you want to include special character types in your password?\
-        \nType y for Yes, n for No");
-          // if (specChar = "Y".toLowerCase) {pool.push(...)}
-          // console.log(pool);
-      } else {
-          window.alert("Oops!\nYour current entry is invalid.\n\nPlease enter a new value.");
-          return generatePassword();
-      }
+      var specChar = confirm(
+        "Do you want to include special character types in your password?\nType y for Yes, n for No"
+        );
+    } else {
+      window.alert("Oops!\nYour current entry is invalid.\n\nPlease enter a new value.");
+      return generatePassword();
+    }
 
+  var userOptions = [];
+
+  if (lowerCase == true) {userOptions.push(...arrayLowerCase);};
+    console.log(userOptions);
+
+  if (upperCase == true) userOptions.push(...arrayUpperCase);
+    console.log(userOptions);
+
+  if (numericVal == true) {userOptions.push(...arrayNumeric);};
+    console.log(userOptions);
+
+  if (specChar == true) userOptions.push(...arraySpecialChar);
+    console.log(userOptions);
+
+  if (lowerCase || upperCase || numericVal || specChar) {
+    for (var i = 0; i < pwLength; i++) {
+      pwResults += userOptions[Math.floor(Math.random() * userOptions.length)];
+    } 
+  } else {
+    window.alert(
+      "Oops!\nA minimum of one character type must be selected in order to generate a\
+      password.\n\nPlease try again :o)"
+    );
+    return generatePassword();
+  }
+  return pwResults;
 }
 
-function userCriteria(){
-  // we need to know how many of 4 types of characters they want in pw; at least one
-  // lowercase prompt 
-    // validate the yes or no
-    // make sure the yes or no is lowercase -- convert their response to lowercase 
-    // push lowercase to userOptoins (or not)
 
-  //  x3
 
-}
-
-// make a call to the next function 
-function createPassword (){
-  // run a set amount of times depending on pw length
-  // randomize each set of criteria; loop that until it meets pw length 
-
-  // return the password 
-}
 
 // Write password to the #password input
 function writePassword() {
