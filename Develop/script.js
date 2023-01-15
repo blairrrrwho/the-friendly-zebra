@@ -3,14 +3,14 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+
 let lowerCase = "abcdefghijklmnopqrstuvwxyz";
 let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-// Stored numbersin variable as a string; will convert to numbers later
+// Stored numbers in variable as a string; will convert to numbers later
 let num = "0123456789";
 let specChar =  " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 // stored all four criteria options in an array
-let userOptions = [];
-let length;
+// let userOptions = [];
 
 
 
@@ -19,12 +19,40 @@ function generatePassword (){
   // Use this for buttons to ensure things are working correctly
   console.log("hey! you clicked the button.");
 
-  // make a prompt asking how many characters they want pw to be; must be btw 8-128
-      // ^ has to be assigned to length 
-  // if input is inside of 8-128, go to next function; if not, alert that it needs a different input
+  window.alert("Hi!\nI hear you need a password generated :o)"); 
+
+  const charLength = Number(window.prompt("First, choose a password character length between\
+  8 and 128 characters.\n\nInput that value in the textbox and click OK."));
+      if (charLength < 8 || charLength > 128) {
+        window.alert("Oops!\nYour chosen value is either too small, too big, or undefined.\
+        \n\nPlease enter a different value.")
+        // put something that redirects to the length prompt screen until a corrent value entered
+      }
+      else {console.log(charLength)};
+
+      let userCritera1 = window.prompt("Do you want to include lowercase character types in your password?\
+        \nType y for Yes, n for No");
+      if (userCritera1 = "Y".toLowerCase) {var userOptions = lowerCase} 
+        console.log(userOptions);
+        
+      let userCriteria2 = window.prompt("Do you want to include uppercase character types in your password?\
+        \nType y for Yes, n for No");
+        if (userCriteria2 = "Y".toLowerCase) {var userOptions = upperCase}
+        console.log(userOptions);
+
+      let userCriteria3 = window.prompt("Do you want to include numbers in your password?\
+        \nType y for Yes, n for No");
+        if (userCriteria3 = "Y".toLowerCase) {var userOptions = num}
+        console.log(userOptions);
+
+      let userCriteria4 = window.prompt("Do you want to include special character types in your password?\
+        \nType y for Yes, n for No");
+        if (userCriteria4 = "Y".toLowerCase) {var userOptions = specChar}
+        console.log(userOptions);
 
 
-}
+  }
+
 
 
 function userCriteria(){
