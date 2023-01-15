@@ -38,19 +38,19 @@ function generatePassword (){
 
     if (pwLength > 7 && pwLength < 129) {
       var lowerCase = window.confirm(
-        "Do you want to include lowercase letters in your password?\nType y for Yes, n for No"
+        "Do you want to include lowercase letters in your password?\nClick OK to include, Cancel to exclude."
         );
         
       var upperCase = window.confirm(
-        "Do you want to include uppercase character types in your password?\nType y for Yes, n for No"
+        "Do you want to include uppercase character types in your password?\nClick OK to include, Cancel to exclude."
         );
 
       var numericVal = window.confirm(
-        "Do you want to include numbers in your password?\nType y for Yes, n for No"
+        "Do you want to include numbers in your password?\nClick OK to include, Cancel to exclude."
         );
 
       var specChar = confirm(
-        "Do you want to include special character types in your password?\nType y for Yes, n for No"
+        "Do you want to include special character types in your password?\nClick OK to include, Cancel to exclude."
         );
     } else {
       window.alert("Oops!\nYour current entry is invalid.\n\nPlease enter a new value.");
