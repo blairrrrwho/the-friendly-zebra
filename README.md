@@ -27,7 +27,7 @@ There are multiple console logs done throughout the entire process to ensure thi
 
 ![The Friendly Zebra Password Generator Screenshot](./assets/images/screenshot_pw%20generator.png)
 
-**Link to the deployeed application: https://blairrrrwho.github.io/the-friendly-zebra-pw-generator/**
+**Link to the deployeed application: https://blairrrrwho.github.io/the-friendly-zebra-password-generator/**
  
 
 ## Credits 🏆
