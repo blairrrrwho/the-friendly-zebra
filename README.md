@@ -18,7 +18,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 - link to deployed page
 
 
-![The Friendly Zebra Password Generator Screenshot](./images/screenshot_pw%20generator.png)
+![The Friendly Zebra Password Generator Screenshot](./assets/images/screenshot_pw%20generator.png)
 
 
 ## Credits
