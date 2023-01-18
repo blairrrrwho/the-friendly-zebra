@@ -71,16 +71,16 @@ function generatePassword() {
   // For every .push, this method returns the targeted array as a new length, with appendages added
   if (lowerCase == true) {userOptions.push(...arrayLowerCase);};
     // Console logged all character type decisions to ensure boolean is working correctly
-    console.log(userOptions);
+    console.log(lowerCase, userOptions);
 
   if (upperCase == true) userOptions.push(...arrayUpperCase);
-    console.log(userOptions);
+    console.log(upperCase, userOptions);
 
   if (numericVal == true) {userOptions.push(...arrayNumeric);};
-    console.log(userOptions);
+    console.log(numericVal, userOptions);
 
   if (specChar == true) userOptions.push(...arraySpecialChar);
-    console.log(userOptions);
+    console.log(specChar, userOptions);
 
   //One of these has to render true to start the loop
   if (lowerCase || upperCase || numericVal || specChar) {
