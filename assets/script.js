@@ -37,7 +37,7 @@ function generatePassword() {
   // It's listed first within the function - so it can be used throughout the entire function
   var pwResults = "";
     var characterLength = window.prompt(
-      "First, choose a password character length between 8 and 128 characters.\
+      "First, pick a password character length between 8 and 128 characters.\
       \n\nInput that value in the textbox and click OK."
       );
     // The user input is listed as a string; so we convert it to an integer with parseInt() and define its new variable
@@ -49,13 +49,13 @@ function generatePassword() {
         "Do you want to include lowercase letters in your password?\nClick OK to include, Cancel to exclude."
         );
       var upperCase = window.confirm(
-        "Do you want to include uppercase character types in your password?\nClick OK to include, Cancel to exclude."
+        "Do you want to include uppercase letters in your password?\nClick OK to include, Cancel to exclude."
         );
       var numericVal = window.confirm(
         "Do you want to include numbers in your password?\nClick OK to include, Cancel to exclude."
         );
       var specChar = confirm(
-        "Do you want to include special character types in your password?\nClick OK to include, Cancel to exclude."
+        "Do you want to include special character in your password?\nClick OK to include, Cancel to exclude."
         );
     } else {
       // If 8 > userInput > 128, isn't a number, or is empty, the generator will read as invalid and loop this alert
