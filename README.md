@@ -19,9 +19,9 @@ There is no installation necessary to use this web application; just a web brows
 
 To use this web application, the first thing you have to do is click "OK" on the introduction alert. Then, you will see the password generator. 
 
-To bein, click the red button labeled "Generate Password." The first window will pop up and ask you to enter a value for how many characters you want the password to be; invalid data will reprompt you to try again. Next, you will have a series of confirm messages pop up asking whether or not you want to include the respective character type in your password; click confirm to include that type, click cancel to exclude that character type. 
+To begin, click the red button labeled "Generate Password." The first window will pop up and ask you to enter a value for how many characters you want the password to be; an invalid input will reprompt you to try again. Next, you will have a series of confirm messages pop up asking whether or not you want to include the respective character type in your password; click confirm to include that type, click cancel to exclude that character type. 
 
-Once the input is validated, a randomly generated password with your preferences applied will display in the textbox on the screen. 
+Once all of the input is validated, a randomly generated password with your preferences applied will display in the textbox on the screen. 
 
 There are multiple console logs done throughout the entire process to ensure things are working correctly with the functions and buttons. Those interested can open up DevTools, open up the console, click the generate password button, and watch the values appear in the console as you're taken through the series of prompts and confirms. 
 
@@ -38,8 +38,6 @@ Google was my best friend throughout this project, as was YouTube. They served t
 
 Once things started working for the most part, my research shifted into optimization. 
 Not necessarily pseudocoding, but going back through the code and asking questions about whether or not this/that line of code could be cleaned up, and even entire code processes - if they could be cleaned up, optimized, or done more efficiently. 
-
-
 
 
 I really could not have worked through this project alone without the help of my colleagues, specifically Christina Hall and BJ Thompson. Together we worked through debugging and optimizing the code until it was working seamlessly. I also am grateful for their set of eyes once the application was deployed to ensure it was working properly. 
@@ -59,4 +57,4 @@ Resource Link used to find a list of special characters: https://www.owasp.org/i
 
 ## Tests
 
-If you open up the console log in DevTools, you can see the different console logs throughout the entire process of this app's execution. 
+If you open up the Console in DevTools, you can see the different console logs throughout the entire process of this application's execution. 
