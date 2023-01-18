@@ -84,8 +84,8 @@ function generatePassword() {
 
   //One of these has to render true to start the loop
   if (lowerCase || upperCase || numericVal || specChar) {
-    //The loop runs until it reaches the set amount of characters denoted in pwLength
-    //The results are stored in the pwResults variable
+    // The loop runs until it reaches the set amount of characters denoted in pwLength
+    // The results are stored in the pwResults variable
     for (var i = 0; i < pwLength; i++) {
       pwResults += userOptions[Math.floor(Math.random() * userOptions.length)];
     } 
