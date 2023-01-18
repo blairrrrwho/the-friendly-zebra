@@ -92,8 +92,8 @@ function generatePassword() {
   } else {
     // This alert pops up if none of the character types returned true
     window.alert(
-      "Oops!\nA minimum of one character type must be selected in order to generate a\
-      password.\n\nPlease try again :o)"
+      "Oops!\nA minimum of one character type must be selected in order to generate a password.\
+      \n\nPlease try again :o)"
     );
     // This stops the execution of the function and starts it over after the clicking past the alert
     return generatePassword();
