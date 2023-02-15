@@ -25,10 +25,13 @@ Once all of the input is validated, a randomly generated password with your pref
 
 There are multiple console logs done throughout the entire process to ensure things are working correctly with the functions and buttons. Those interested can open up DevTools, open up the console, click the generate password button, and watch the values appear in the console as you're taken through the series of prompts and confirms. 
 
+## Deployment
+
+
 ![The Friendly Zebra Password Generator Screenshot](./assets/images/screenshot_pw%20generator.png)
 
-**Link to the deployeed application: https://blairrrrwho.github.io/the-friendly-zebra-password-generator/**
- 
+Deployed URL: <a href="https://blairrrrwho.github.io/the-friendly-zebra-password-generator/">The Friendly Zebra Password Generator</a>
+
 
 ## Credits 🏆
 
